@@ -1,0 +1,103 @@
+body{
+  background-color: #FFFFFF;
+}
+/*User Story#1: All headers favorite color and set to a sans-serif font*/
+h1, h2, h3, h4, h5 {
+  color: #32A852;
+  font-family: sans-serif;
+}
+caption {
+   padding: 10px;
+   font-weight: bold;
+}
+
+/*User Story#2: Your table should have bold/colored table headers,
+as well as a table border.*/
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+th {
+    font-weight: bold;
+}
+td, th {
+  width: 4rem;
+  height: 2rem;
+  border: 2px solid #999;
+}
+td {
+  background: #FFFFFF;
+}
+#scoreBoard {
+  border-color: #FFFFFF;
+  border-spacing: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  background: #A8CCC6;/*teal*/
+}
+/*User Story#3: Your list should have square list bullets.*/
+#teamRoster ul {
+  list-style-type: square;
+}
+
+/*User Story#4: When the user hovers over a hyperlink the background color of
+the hyperlink should change and it should not be underlined.*/
+
+a{
+  color: #000;/*black*/
+  text-decoration: none;
+  cursor: pointer;
+}
+a:link{
+  background-color: #66ADCC;/*lightblue*/
+}
+a:visited{
+  background-color: #ED9DD8;/*lightpink*/
+}
+a:hover{
+  background-color: #CCFFCC;/*lightgreen*/
+}
+a:active{
+  background-color: #FFFFCC;/*lightyellow*/
+}
+/*User Story#5: Set the background color of the block quote text (second paragraph)
+to a dark color and the font color to a contrasting light color.*/
+blockquote {
+  background-color: #ED9DD8;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+/*User Story#6: Make each team's image the background image
+for the list.*/
+
+li > img {
+  position: relative;
+  top: 60px;
+  left: 10px;
+  opacity: 0.3;
+  padding-top: 1px;
+  height: 22%;
+  width: 22%;
+  z-index: -1;
+}
+
+/* img {
+  display: none;
+}
+#teamRoster > li:first-child {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-size: contain;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+} */
+/*User Story#7: The checkbox list should not be bulleted.*/
+#checkbox-grid {
+  list-style-type: none;
+}
+
+#teamRoster > li > ul > li > ol> li:first-child {
+  font-weight: bold;
+}
